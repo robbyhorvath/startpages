@@ -1,116 +1,83 @@
 body {
-    background-color: #282a36;
-    font-family: 'Poppins', sans-serif;
-    overflow: hidden;
-    -moz-user-select: none;
-    padding: 0;
-    margin: 0;
+	background-color: #282a36;
+	font-family: 'Poppins', sans-serif;
+	overflow: hidden;
+	-moz-user-select: none;
+	padding: 0;
+	margin: 0;
 }
 
 /*-------------------------------------------------------*/
 /* This part of the code takes care of styling the cards */
 /*-------------------------------------------------------*/
 .card_list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .card_title {
-    font-size: 45px
+	font-size: 45px;
 }
 .card {
-    display: flex;
-    flex-direction: column;
-    min-height: 450px;
-    width: 300px;
-    min-width: 200px;
-    padding: 1.5rem;
-    border-radius: 10px;
-    background-color: #44475a;
-    box-shadow: -1rem 0 3rem #1b1f26;
-    transition: .2s;
+	display: flex;
+	flex-direction: column;
+	min-height: 450px;
+	width: 300px;
+	min-width: 200px;
+	padding: 1.5rem;
+	border-radius: 10px;
+	background-color: #44475a;
+	box-shadow: -1rem 0 3rem #1b1f26;
+	transition: 0.2s;
 }
-.card:hover, .card:active {
-    transform: translateY(-1rem)
+.card:hover,
+.card:active {
+	transform: translateY(-1rem);
 }
-.card:hover~.card, .card:active~.card {
-    transform: translateX(130px)
+.card:hover ~ .card,
+.card:active ~ .card {
+	transform: translateX(130px);
 }
 .card:not(:first-child) {
-    margin-left: -130px
+	margin-left: -130px;
 }
-a:visited, a:link, a:active {
-    color: #f8f8f2;
-    height: auto;
-    width: auto;
-    text-decoration: none;
-    font-size: 32px;
-    line-height: 2;
+a:visited,
+a:link,
+a:active {
+	color: #f8f8f2;
+	height: auto;
+	width: auto;
+	text-decoration: none;
+	font-size: 32px;
+	line-height: 2;
 }
 a:hover {
-    text-shadow: 2px 2px 4px #1b1f26;
+	text-shadow: 2px 2px 4px #1b1f26;
 }
 #personal > a:hover {
-    color: #bd93f9
+	color: #bd93f9;
 }
 #school > a:hover {
-    color: #8be9fd
+	color: #8be9fd;
 }
 #other other > a:hover {
-    color: #50fa7b
+	color: #50fa7b;
 }
 a:hover {
-    color: #88c0d0
+	color: #88c0d0;
 }
 
 /*Card name styling*/
 #p {
-    color: #bd93f9
+	color: #bd93f9;
 }
 #s {
-    color: #8be9fd
+	color: #8be9fd;
 }
 #o {
-    color: #50fa7b
-}
-
-/*-------------------------------------------------------------------------*/
-/* This part of the code takes care of the styling the greeting, and time. */
-/*-------------------------------------------------------------------------*/
-
-#time {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    margin: 10px; 
-    font-size: 28px;
-    animation:blinking 5s infinite;
-    }
-    @keyframes blinking{
-    0%{     color: #5e81ac; }
-    25%{    color: #81a1c1; }
-    50%{    color: #88c0d0; }
-    75%{    color: #8fbcbb; }
-    100%{   color: #5e81ac; }
-}
-
-/* "III" or "Tertius" is the name of this startpage*/
-h2 {
-    font-size: 28px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 10px;
-    animation:blinking 5s infinite;
-    }
-    @keyframes blinking{
-    0%{     color: #5e81ac; }
-    25%{    color: #81a1c1; }
-    50%{    color: #88c0d0; }
-    75%{    color: #8fbcbb; }
-    100%{   color: #5e81ac; }
+	color: #50fa7b;
 }
